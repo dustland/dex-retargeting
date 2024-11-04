@@ -14,6 +14,13 @@ python3 detect_from_video.py \
   --output-path data/allegro_joints.pkl 
 ```
 
+You probably need to install these deps beforehand:
+
+```shell
+conda install -c conda-forge opencv tqdm tyro
+pip install dex-retargeting
+```
+
 This command will output the joint trajectory as a pickle file at the `output_path`.
 
 The pickle file is a python dictionary with two keys: `meta_data` and `data`. `meta_data`, a dictionary, includes
